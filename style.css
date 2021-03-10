@@ -59,6 +59,7 @@ h2 {
   background: none;
   padding: 0;
   cursor: pointer;
+  outline: none;
 }
 .hamburger-menu button span {
   position: absolute;
@@ -75,7 +76,7 @@ h2 {
 .hamburger-menu button span:nth-child(3) {
   top: 18px;
 }
-.hamburger-menu [data-state=open] span:first-child {
+.hamburger-menu [data-state=open] span:nth-child(1) {
   transform: rotate(45deg);
   top: 10px;
 }
@@ -87,7 +88,10 @@ h2 {
   transform: rotate(-45deg);
   top: 10px;
 }
-
+.hamburger-menu button:hover {
+  opacity: 0.6;
+  box-shadow: none;
+}
 nav {
   position: absolute;
   height: 100%;
